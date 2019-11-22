@@ -1,0 +1,12 @@
+li {
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+}
+
+.name {
+    border: solid 1px; color: black;
+
+}
