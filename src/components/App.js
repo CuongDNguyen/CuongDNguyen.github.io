@@ -2,41 +2,32 @@ import React, { useState } from 'react';
 import Container from "@material-ui/core/Container";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import Box from "@material-ui/core/Box";
+import TabContent from "./TabContent";
 
 const App = () => {
-    const [showProfileTab, setShowProfileTab ] = useState(false);
-    const [showTechTab, setShowTechTab ] = useState(false);
-    const [showTutorialsTab, setShowTutorialsTab ] = useState(false);
+
+    const [currentTab, setCurrentTab] = useState("");
 
     const toggleProfileTab = () => {
-        const shouldShowProfileTab = showProfileTab;
-        console.log(shouldShowProfileTab);
-        setShowProfileTab(!shouldShowProfileTab);
+        setCurrentTab(`Profile`)
     };
 
     const toggleTechTab = () => {
-        const shouldShowTechTab = showTechTab;
-        console.log(shouldShowTechTab);
-        setShowTechTab(!shouldShowTechTab);
+        setCurrentTab(`Tech`)
     };
 
     const toggleTutorialsTab = () => {
-        const shouldShowTutorialsTab = showTutorialsTab;
-        console.log(shouldShowTutorialsTab);
-        setShowTutorialsTab(!shouldShowTutorialsTab);
+       setCurrentTab(`Tutorials`)
     };
 
     return (
         <Container fixed maxWidth="lg">
             <Tabs value={false}>
-                <Tab label={<span className={showProfileTab ? 'profileTab' : 'noShow'} onClick={toggleProfileTab}>Profile</span>} />
-                <Tab label={<span className={showTechTab ? 'techTab' : 'noShow'} onClick={toggleTechTab}>Tech Reviews</span>} />
-                <Tab label={<span className={showTutorialsTab ? 'tutorialsTab' : 'noShow'} onClick={toggleTutorialsTab}>Tutorials</span>} />
+                <Tab label={<span className='tabs' onClick={toggleProfileTab}>Profile</span>} />
+                <Tab label={<span className='tabs' onClick={toggleTechTab}>Tech Reviews</span>} />
+                <Tab label={<span className='tabs' onClick={toggleTutorialsTab}>Tutorials</span>} />
             </Tabs>
-            <Box component="span" m={1}>
-
-            </Box>
+            <TabContent content={currentTab}/>
         </Container>
     );
 };
