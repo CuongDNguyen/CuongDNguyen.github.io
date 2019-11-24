@@ -15,8 +15,9 @@ const App = () => {
   return (
       <div className="container-fluid">
         <Tabs value={0}>
-          <Tab value={0} label="Projects" onClick={tabClicked} />
-          <Tab value={1} label="My Profile" onClick={tabClicked} />
+          <Tab value={0} label="My Profile" onClick={tabClicked} />
+          <Tab value={1} label="Projects" onClick={tabClicked} />
+
         </Tabs>
         {currentTab === "Projects" ? <Projects /> : ""}
         {currentTab === "Profiles" ? <Profiles /> : ""}
