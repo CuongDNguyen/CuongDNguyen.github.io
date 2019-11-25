@@ -7,29 +7,24 @@ import {Switch, Route, Link, BrowserRouter} from "react-router-dom";
 
 const App = () => {
 
-    const [currentTab, setCurrentTab] = useState("/profile");
+    const [currentTab, setCurrentTab] = useState("profiles");
 
     const profileTabClicked = () => {
-        setCurrentTab("/profile")
+        setCurrentTab("profiles")
     };
 
     const projectsTabClicked = () => {
-        setCurrentTab("/projects")
+        setCurrentTab("projects")
     };
 
     return (
-        <BrowserRouter>
             <div className="container-fluid">
-                <Tabs value={currentTab === "/profile" ? "/profile" : "/projects"}>
-                    <Tab className="tabs" value="/profile" component={Link} label="My Profile" to="/profile" onClick={profileTabClicked} />
-                    <Tab className="tabs" value="/projects" component={Link} label="Projects" to="/projects" onClick={projectsTabClicked} />
+                <Tabs value={currentTab === "profiles" ? "profiles" : "projects"}>
+                    <Tab className="tabs" value="profiles" label="My Profiles" onClick={profileTabClicked} />
+                    <Tab className="tabs" value="projects" label="Projects"  onClick={projectsTabClicked} />
                 </Tabs>
-                <Switch>
-                    <Route path="/profile" component={Profiles} />
-                    <Route path="/projects" component={Projects} />
-                </Switch>
+                {currentTab === "profiles" ? <Profiles /> : <Projects />}
             </div>
-        </BrowserRouter>
     );
 };
 
