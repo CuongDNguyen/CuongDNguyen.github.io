@@ -1,0 +1,1 @@
+{"version":3,"sources":["Profiles.css"],"names":[],"mappings":"AAAA,gBACI,WAAY,CACZ,YAAa,CACb,cACJ,CAEA,EACI,cACJ","file":"main.4f71893c.chunk.css","sourcesContent":["#profilePicture {\n    width: 300px;\n    height: 300px;\n    display: inline;\n}\n\np {\n    display: inline;\n}"]}
