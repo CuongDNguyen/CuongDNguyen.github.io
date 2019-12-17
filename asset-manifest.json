@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.4614d5a4.chunk.css",
     "main.js": "/static/js/main.5ea0c4a5.chunk.js",
     "main.js.map": "/static/js/main.5ea0c4a5.chunk.js.map",
@@ -9,13 +10,31 @@
     "static/js/2.fceab9ed.chunk.js.map": "/static/js/2.fceab9ed.chunk.js.map",
     "index.html": "/index.html",
     "precache-manifest.c7bd06ea83429914d6e13995a7f65a89.js": "/precache-manifest.c7bd06ea83429914d6e13995a7f65a89.js",
+=======
+    "main.css": "/static/css/main.4f71893c.chunk.css",
+    "main.js": "/static/js/main.2127dfff.chunk.js",
+    "main.js.map": "/static/js/main.2127dfff.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4314199c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4314199c.js.map",
+    "static/js/2.2fa4a8bb.chunk.js": "/static/js/2.2fa4a8bb.chunk.js",
+    "static/js/2.2fa4a8bb.chunk.js.map": "/static/js/2.2fa4a8bb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ad2bf57aaf7a0bf0b2307d72c588aa1d.js": "/precache-manifest.ad2bf57aaf7a0bf0b2307d72c588aa1d.js",
+>>>>>>> parent of 5ec23d8... typo
     "service-worker.js": "/service-worker.js",
     "static/css/main.4614d5a4.chunk.css.map": "/static/css/main.4614d5a4.chunk.css.map"
   },
   "entrypoints": [
+<<<<<<< HEAD
     "static/js/runtime-main.cfb0a9d1.js",
     "static/js/2.fceab9ed.chunk.js",
     "static/css/main.4614d5a4.chunk.css",
     "static/js/main.5ea0c4a5.chunk.js"
+=======
+    "static/js/runtime-main.4314199c.js",
+    "static/js/2.2fa4a8bb.chunk.js",
+    "static/css/main.4f71893c.chunk.css",
+    "static/js/main.2127dfff.chunk.js"
+>>>>>>> parent of 5ec23d8... typo
   ]
 }

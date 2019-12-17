@@ -14,7 +14,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
+<<<<<<< HEAD
   "/precache-manifest.c7bd06ea83429914d6e13995a7f65a89.js"
+=======
+  "/precache-manifest.ad2bf57aaf7a0bf0b2307d72c588aa1d.js"
+>>>>>>> parent of 5ec23d8... typo
 );
 
 self.addEventListener('message', (event) => {
