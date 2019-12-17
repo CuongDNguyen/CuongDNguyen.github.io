@@ -22,7 +22,7 @@ const App = () => {
                     <Tab className="tabs" value="profiles" label="My Profiles" onClick={profileTabClicked} />
                     <Tab className="tabs" value="projects" label="Projects"  onClick={projectsTabClicked} />
                 </Tabs>
-                {currentTab === "profi les" ? <Profiles /> : <Projects />}
+                {currentTab === "profiles" ? <Profiles /> : <Projects />}
             </div>
     );
 };
