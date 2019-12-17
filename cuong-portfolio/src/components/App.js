@@ -3,7 +3,6 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Projects from "./Projects";
 import Profiles from "./Profiles";
-import {Switch, Route, Link, BrowserRouter} from "react-router-dom";
 
 const App = () => {
 
